@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 DEFAULT_WORKSPACE_ROOT="${HOME}/projects/flexisaf"
-DEFAULT_PRD_PATH="/home/salisu/Downloads/Distinction Bytes (Mobile App).pdf"
+# The PRD ships bundled with the skill so no external download is needed.
+# Override with BYTE_PRD_PATH to point at an external copy if desired.
+DEFAULT_PRD_PATH="${SCRIPT_DIR}/../references/prd-distinction-bytes.md"
 
 BYTE_WORKSPACE_ROOT="${BYTE_WORKSPACE_ROOT:-$DEFAULT_WORKSPACE_ROOT}"
 BYTE_PRD_PATH="${BYTE_PRD_PATH:-$DEFAULT_PRD_PATH}"

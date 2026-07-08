@@ -1,10 +1,11 @@
 # PRD Intake
 
-Use the product requirements document as the main behavioral reference for Distinction Bytes:
+The full product requirements document ships bundled with this skill, so no external download is needed. Use it as the main behavioral reference for Distinction Bytes:
 
-- `/home/salisu/Downloads/Distinction Bytes (Mobile App).pdf`
+- **Primary (read this):** [`references/prd-distinction-bytes.md`](prd-distinction-bytes.md) — the complete PRD as markdown.
+- **Original source:** `resources/distinction-bytes-prd.pdf` — the exact original PDF, if you need to verify fidelity.
 
-If that path is not valid in the current environment, resolve the PRD path through `BYTE_PRD_PATH` or the workspace locator script before proceeding.
+To override with a different or newer PRD, set `BYTE_PRD_PATH` or use the workspace locator script; the locator defaults to the bundled markdown copy.
 
 ## Goals
 

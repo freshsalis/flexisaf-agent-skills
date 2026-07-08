@@ -66,6 +66,8 @@ Open these only when needed.
 
 ### PRD intake and product behavior
 
+The full PRD is bundled with this skill — read [references/prd-distinction-bytes.md](references/prd-distinction-bytes.md) directly (the original PDF is at `resources/distinction-bytes-prd.pdf`). No external download is required.
+
 Open [references/prd-intake.md](references/prd-intake.md) when you need to:
 
 - summarize the PRD
