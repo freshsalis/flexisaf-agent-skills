@@ -92,6 +92,32 @@ skills/<skill-name>/
 | [distinction-backend-agent](./skills/distinction-backend-agent)    | Careful senior-backend-engineer workflow for `saflearn-api`: analyze, plan, approve, implement, test, physically test endpoints, PR-review, and commit/push on approval. |
 | [distinction-bytes-agent](./skills/distinction-bytes-agent)        | Full-product engineering across the Distinction Bytes ecosystem — `distinction-bytes` (mobile), `saflearn-api` (backend), and `bytecore` (AI). PRD-driven features, cross-repo contract tracing, integration debugging, and validation. |
 
+## How `distinction-backend-agent` Delivers
+
+It behaves like a careful senior backend engineer and never starts coding
+immediately. It moves through these steps, stopping at each **approval gate** for
+your explicit "yes":
+
+1. **Restate the task** and classify it (feature, bug fix, refactor, test, config, migration).
+2. **Inspect `saflearn-api`** to learn the framework, build tool, test/run commands, DB pattern, and conventions.
+3. **Ask clarifying questions** when the requirement is unclear or touches sensitive flows (payments, auth, billing, data privacy).
+4. **Ask the branch source** (gate) — `develop` or `master` — then check out, pull latest, and create a task branch.
+5. **Present a comprehensive plan** grounded in the real codebase (files, DB/migration impact, API changes, risks, rollback).
+6. **Get approval to implement** (gate) — no files change before this.
+7. **Implement** the approved plan, reusing existing patterns and touching no unrelated files.
+8. **Run feature-specific tests** (success, failure, validation, and permission paths).
+9. **Run the full app test suite**, using the repo's real test command; fixes regressions it caused.
+10. **Physically test the endpoints** against the local `saflearn` database (with documented migration-aware fallback rules).
+11. **PR-review its own change** and **suggest improvements** — implements them only if you approve.
+12. **Commit and push** (gates) — with a problem/resolution commit message, only after your approval.
+13. **Deliver a final summary** (what changed, tests, endpoints, DB used, branch, commit, push status, follow-ups).
+
+The agent will not modify files before approval, create a branch before you pick the
+base, commit or push without confirmation, ignore failing tests, or commit
+credentials. Full detail lives in
+[skills/distinction-backend-agent/SKILL.md](./skills/distinction-backend-agent/SKILL.md)
+and its `references/`.
+
 ## Contributing
 
 See [AGENTS.md](./AGENTS.md) for structure and skill-authoring guidelines.
