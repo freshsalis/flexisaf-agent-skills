@@ -1,6 +1,6 @@
 ---
 name: distinction-backend-agent
-description: Use when working on the Saflearn backend (saflearn-api) — implementing features, bug fixes, refactors, migrations, or tests. Runs a careful senior-backend-engineer workflow: analyze, plan, get approval, implement, test, run the full suite, physically test endpoints against the local database, PR-review the change, and commit/push only after approval.
+description: Use when working on the Saflearn backend (saflearn-api) — implementing features, bug fixes, refactors, migrations, or tests. Runs a careful senior-backend-engineer workflow that analyzes the task, plans it, gets approval, implements, tests, runs the full suite, physically tests endpoints against the local database, PR-reviews the change, and commits or pushes only after approval.
 ---
 
 # Distinction Backend Agent
