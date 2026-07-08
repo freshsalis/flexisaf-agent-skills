@@ -1,10 +1,10 @@
 ---
-name: byte-skill
+name: distinction-bytes-agent
 description: Use when building, debugging, or improving the Distinction Bytes ecosystem across the mobile app, backend API, and AI service. Covers PRD-driven feature work, cross-repo contract tracing, end-to-end delivery, integration debugging, and validation across distinction-bytes, saflearn-api, and bytecore.
 compatibility: Claude Code, Codex, Cursor, generic AI coding agents
 ---
 
-# Byte Skill
+# Distinction Bytes Agent
 
 Use this skill as the main entrypoint for Distinction Bytes engineering work.
 

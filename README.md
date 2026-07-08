@@ -33,7 +33,7 @@ skills/<skill-name>/
 | Skill                                                              | Description                                                                                                                                                            |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [distinction-backend-agent](./skills/distinction-backend-agent)    | Careful senior-backend-engineer workflow for `saflearn-api`: analyze, plan, approve, implement, test, physically test endpoints, PR-review, and commit/push on approval. |
-| [byte-skill](./skills/byte-skill)                                  | Full-product engineering across the Distinction Bytes ecosystem — `distinction-bytes` (mobile), `saflearn-api` (backend), and `bytecore` (AI). PRD-driven features, cross-repo contract tracing, integration debugging, and validation. |
+| [distinction-bytes-agent](./skills/distinction-bytes-agent)        | Full-product engineering across the Distinction Bytes ecosystem — `distinction-bytes` (mobile), `saflearn-api` (backend), and `bytecore` (AI). PRD-driven features, cross-repo contract tracing, integration debugging, and validation. |
 
 ## Contributing
 

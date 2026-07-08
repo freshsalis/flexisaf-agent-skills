@@ -14,8 +14,8 @@
       }
     },
     {
-      "name": "byte-skill",
-      "source": "./skills/byte-skill",
+      "name": "distinction-bytes-agent",
+      "source": "./skills/distinction-bytes-agent",
       "description": "Full-product engineering workflow for the Distinction Bytes ecosystem across the mobile app (distinction-bytes), backend API (saflearn-api), and AI service (bytecore). Covers PRD-driven feature work, cross-repo contract tracing, end-to-end delivery, integration debugging, and validation.",
       "version": "1.0.0",
       "author": {
