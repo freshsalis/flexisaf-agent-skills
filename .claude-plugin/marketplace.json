@@ -1,0 +1,17 @@
+{
+  "name": "flexisaf-agent-skills",
+  "owner": {
+    "name": "FlexiSAF"
+  },
+  "plugins": [
+    {
+      "name": "distinction-backend-agent",
+      "source": "./skills/distinction-backend-agent",
+      "description": "Careful senior-backend-engineer workflow for the saflearn-api repository: analyze, plan, get approval, implement, test, physically test endpoints, PR-review, and commit/push only after approval.",
+      "version": "1.0.0",
+      "author": {
+        "name": "FlexiSAF"
+      }
+    }
+  ]
+}
