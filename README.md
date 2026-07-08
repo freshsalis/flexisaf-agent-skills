@@ -2,7 +2,7 @@
 
 Independent agent skills for FlexiSAF's AI coding assistants (Claude Code, Codex, Cursor, OpenClaw, and 70+ more).
 
-This is a standalone marketplace — **not** a fork of any other skills repository. The canonical source of truth is the top-level `skills/` tree.
+The canonical source of truth is the top-level `skills/` tree.
 
 ## Install
 
