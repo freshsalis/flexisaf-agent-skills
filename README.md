@@ -118,6 +118,29 @@ credentials. Full detail lives in
 [skills/distinction-backend-agent/SKILL.md](./skills/distinction-backend-agent/SKILL.md)
 and its `references/`.
 
+## How `distinction-bytes-agent` Works
+
+It handles full-product work across the three Distinction Bytes repos — the mobile app
+(`distinction-bytes`), the backend (`saflearn-api`), and the AI service (`bytecore`) —
+treating the bundled PRD as the product source of truth and the repos as the
+implementation source of truth. Its default flow:
+
+1. **Resolve the PRD and repo paths** (the PRD ships bundled with the skill — no download needed).
+2. **Read the PRD first** and summarize product goals, core flows, business rules, and likely gaps.
+3. **Inspect all three repos** and map the current implementation against the PRD.
+4. **Determine which repo(s) are actually affected** by the task.
+5. **Trace the contracts on both sides** before changing any request/response shape.
+6. **Make the smallest safe cross-repo changes** that solve the real problem, reusing existing patterns.
+7. **Validate** behavior, tests, and integration points, then give a concise change summary.
+
+It adapts to the task shape — implementing a PRD feature, debugging a broken mobile
+flow, realigning an out-of-sync API and app, or improving reliability — and always
+explores the affected code before editing, fixes root causes across repos rather than
+patching symptoms, and states assumptions when the PRD or code leaves a gap. Full
+detail lives in
+[skills/distinction-bytes-agent/SKILL.md](./skills/distinction-bytes-agent/SKILL.md)
+and its `references/`.
+
 ## Contributing
 
 See [AGENTS.md](./AGENTS.md) for structure and skill-authoring guidelines.
